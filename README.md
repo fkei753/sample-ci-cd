@@ -1,9 +1,9 @@
-sample-ci-cd/
-├── .github/
-│   └── workflows/
-│       └── pipeline.yml          # GitHub Actionsで実行されるCI/CD
-├── src/
-│   └── app.js                    # Expressサンプルアプリ
-├── package.json                  # npm設定
-├── sonar-project.properties      # SonarCloud設定
-└── README.md                     # ハンズオン手順書（日本語）
+sample-ci-cd/ <br>
+├── .github/ <br>
+│   └── workflows/ <br>
+│       └── pipeline.yml          # GitHub Actionsで実行されるCI/CD <br>
+├── src/ <br>
+│   └── app.js                    # Expressサンプルアプリ <br>
+├── package.json                  # npm設定 <br>
+├── sonar-project.properties      # SonarCloud設定 <br>
+└── README.md                     # ハンズオン手順書（日本語） <br>
