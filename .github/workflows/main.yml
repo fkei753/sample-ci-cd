@@ -46,22 +46,22 @@ jobs:
           fail_action: false
           allow_issue_writing: true
           upload_artifact: true
-          artifact_name: zap-scan
+          artifact_name: zapscan
 
       - name: Upload ZAP HTML Report
         uses: actions/upload-artifact@v4
         with:
-          name: zap-report-html
+          name: zaphtml
           path: zap_report.html
 
       - name: Upload ZAP MD Report
         uses: actions/upload-artifact@v4
         with:
-          name: zap-report-md
+          name: zapmd
           path: zap_report.md
 
       - name: Upload ZAP JSON Report
         uses: actions/upload-artifact@v4
         with:
-          name: zap-report-json
+          name: zapjson
           path: zap_report.json
