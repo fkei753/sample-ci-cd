@@ -48,19 +48,19 @@ jobs:
           upload_artifact: false
 
       - name: Upload ZAP HTML Report
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4
         with:
           name: zap-report-html
-          path: report_html.html
+          path: zap_report.html
 
       - name: Upload ZAP MD Report
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4
         with:
           name: zap-report-md
-          path: report_md.md
+          path: zap_report.md
 
       - name: Upload ZAP JSON Report
-        uses: actions/upload-artifact@v4.4.0
+        uses: actions/upload-artifact@v4
         with:
           name: zap-report-json
-          path: report_json.json
+          path: zap_report.json
