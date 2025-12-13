@@ -36,13 +36,15 @@ jobs:
 
       - name: Start App
         run: |
-          nohup npm start &
-          sleep 5
+          nohup npm start > app.log 2>&1 &
+          timeout 60 bash -c 'until curl -s http://localhost:3000; do sleep 2; done'
+          echo "App is ready"
+          cat app.log
 
       - name: OWASP ZAP Baseline Scan (DAST)
         uses: zaproxy/action-baseline@v0.13.0
         with:
-          target: "http://localhost:3000"
+          target: "http://172.17.0.1:3000"
           fail_action: false
           allow_issue_writing: true
           upload_artifact: true
