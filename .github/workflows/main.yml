@@ -46,4 +46,6 @@ jobs:
       - name: OWASP ZAP Baseline Scan (DAST)
         uses: zaproxy/action-baseline@v0.13.0
         continue-on-error: true
+        with:
+          target: "http://localhost:3000"
         
